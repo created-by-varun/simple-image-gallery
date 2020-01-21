@@ -5,7 +5,7 @@ function imageGallery() {
   previews.forEach(preview => {
     preview.addEventListener("click", function() {
       const smallSrc = this.src;
-      const bigSrc = smallSrc.replace("small", "big");
+      const bigSrc = smallSrc.replace("small", "big"); //replaces the string in the name of the image
       previews.forEach(preview => preview.classList.remove("room-active"));
       highlight.src = bigSrc;
       preview.classList.add("room-active");
